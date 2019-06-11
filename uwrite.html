@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html>
+<!-- https://material.io/guidelines/style/color.html -->
+<html>
+<head>
+	<title>uwrite</title>
+    <style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+		@import url('https://fonts.googleapis.com/css?family=Roboto');
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		html,
+		body {
+			font: 24px/1 'Noto Sans';
+			height: 100%;
+		}
+		html {
+			background-color: #B71C1C;
+		}
+		body {
+			 display: flex;
+			 flex-direction: column;
+			 overflow: hidden;
+		}
+		header {
+			 background-color: #e0e0e0;
+			 color: rgba(0, 0, 0, .7);
+			 padding: .5rem;
+		}
+		.shake {
+			 animation: shake 600ms 2 ease-in-out both;
+			 transform: translate3d(0, 0, 0);
+			 backface-visibility: hidden;
+			 perspective: 1000px;
+			 transform-origin: center center;
+		}
+		@keyframes shake {
+			 2% {
+				 transform: translate(0.5px, 0.5px) rotate(-0.5deg);
+			 }
+			 4% {
+				 transform: translate(0.5px, 2.5px) rotate(1.5deg);
+			 }
+			 6% {
+				 transform: translate(-0.5px, 1.5px) rotate(0.5deg);
+			 }
+			 8% {
+				 transform: translate(2.5px, 1.5px) rotate(-0.5deg);
+			 }
+			 10% {
+				 transform: translate(-1.5px, 0.5px) rotate(1.5deg);
+			 }
+			 12% {
+				 transform: translate(2.5px, -1.5px) rotate(-0.5deg);
+			 }
+			 14% {
+				 transform: translate(0.5px, -0.5px) rotate(1.5deg);
+			 }
+			 16% {
+				 transform: translate(1.5px, 1.5px) rotate(-0.5deg);
+			 }
+			 18% {
+				 transform: translate(-0.5px, 0.5px) rotate(0.5deg);
+			 }
+			 20% {
+				 transform: translate(-0.5px, -0.5px) rotate(-0.5deg);
+			 }
+			 22% {
+				 transform: translate(-1.5px, -1.5px) rotate(-0.5deg);
+			 }
+			 24% {
+				 transform: translate(1.5px, -0.5px) rotate(1.5deg);
+			 }
+			 26% {
+				 transform: translate(1.5px, 1.5px) rotate(0.5deg);
+			 }
+			 28% {
+				 transform: translate(2.5px, 1.5px) rotate(0.5deg);
+			 }
+			 30% {
+				 transform: translate(2.5px, 0.5px) rotate(1.5deg);
+			 }
+			 32% {
+				 transform: translate(-0.5px, -0.5px) rotate(0.5deg);
+			 }
+			 34% {
+				 transform: translate(-1.5px, -0.5px) rotate(-0.5deg);
+			 }
+			 36% {
+				 transform: translate(-1.5px, 2.5px) rotate(0.5deg);
+			 }
+			 38% {
+				 transform: translate(2.5px, 2.5px) rotate(0.5deg);
+			 }
+			 40% {
+				 transform: translate(2.5px, 0.5px) rotate(0.5deg);
+			 }
+			 42% {
+				 transform: translate(1.5px, 2.5px) rotate(-0.5deg);
+			 }
+			 44% {
+				 transform: translate(0.5px, -1.5px) rotate(1.5deg);
+			 }
+			 46% {
+				 transform: translate(2.5px, 0.5px) rotate(1.5deg);
+			 }
+			 48% {
+				 transform: translate(-0.5px, -0.5px) rotate(1.5deg);
+			 }
+			 50% {
+				 transform: translate(2.5px, 1.5px) rotate(1.5deg);
+			 }
+			 52% {
+				 transform: translate(0.5px, 0.5px) rotate(0.5deg);
+			 }
+			 54% {
+				 transform: translate(-0.5px, -1.5px) rotate(-0.5deg);
+			 }
+			 56% {
+				 transform: translate(0.5px, 1.5px) rotate(0.5deg);
+			 }
+			 58% {
+				 transform: translate(2.5px, 0.5px) rotate(0.5deg);
+			 }
+			 60% {
+				 transform: translate(-1.5px, 0.5px) rotate(0.5deg);
+			 }
+			 62% {
+				 transform: translate(0.5px, 1.5px) rotate(0.5deg);
+			 }
+			 64% {
+				 transform: translate(-0.5px, 0.5px) rotate(-0.5deg);
+			 }
+			 66% {
+				 transform: translate(0.5px, 0.5px) rotate(0.5deg);
+			 }
+			 68% {
+				 transform: translate(-1.5px, 0.5px) rotate(1.5deg);
+			 }
+			 70% {
+				 transform: translate(-0.5px, 2.5px) rotate(1.5deg);
+			 }
+			 72% {
+				 transform: translate(-0.5px, 0.5px) rotate(0.5deg);
+			 }
+			 74% {
+				 transform: translate(-1.5px, 0.5px) rotate(0.5deg);
+			 }
+			 76% {
+				 transform: translate(-1.5px, 0.5px) rotate(0.5deg);
+			 }
+			 78% {
+				 transform: translate(-0.5px, 2.5px) rotate(1.5deg);
+			 }
+			 80% {
+				 transform: translate(-1.5px, 1.5px) rotate(-0.5deg);
+			 }
+			 82% {
+				 transform: translate(1.5px, 1.5px) rotate(-0.5deg);
+			 }
+			 84% {
+				 transform: translate(0.5px, -0.5px) rotate(1.5deg);
+			 }
+			 86% {
+				 transform: translate(0.5px, -1.5px) rotate(-0.5deg);
+			 }
+			 88% {
+				 transform: translate(1.5px, 1.5px) rotate(0.5deg);
+			 }
+			 90% {
+				 transform: translate(2.5px, 0.5px) rotate(-0.5deg);
+			 }
+			 92% {
+				 transform: translate(2.5px, -0.5px) rotate(-0.5deg);
+			 }
+			 94% {
+				 transform: translate(-1.5px, 1.5px) rotate(0.5deg);
+			 }
+			 96% {
+				 transform: translate(-1.5px, 0.5px) rotate(0.5deg);
+			 }
+			 98% {
+				 transform: translate(-1.5px, 0.5px) rotate(1.5deg);
+			 }
+			 0%,
+			 100% {
+				 transform: translate(0, 0) rotate(0);
+			 }
+		}
+		svg {
+			transition: fill 300ms ease-in-out;
+			fill: rgba(0, 0, 0, .7);
+			width: 1rem;
+			height: 1rem;
+		}
+		header > section {
+			display: flex;
+			justify-content: flex-end;
+		}
+		[data-action] {
+			cursor: pointer;
+		}
+		.logo {
+			margin-right: auto;
+		}
+		.timer {
+			display: none;
+		}
+		.timer.active {
+			display: inline;
+		}
+		.timer.active ~ span {
+			display: none;
+		}
+		.timer span {
+			font-weight: bold;
+			margin-left: .5rem;
+		}
+		.timers > span {
+			margin-left: .25rem;
+		}
+		.theme {
+			margin-left: 0; /*1.25rem;*/
+		}
+		main {
+			flex: 1;
+			overflow: hidden;
+		}
+		textarea {
+			color: rgba(0, 0, 0, .54);
+			font: inherit;
+			width: 100%;
+			height: 100%;
+			resize: none;
+			padding: .5rem;
+			border: none;
+			outline: none;
+			line-height: 1.25rem;
+			letter-spacing: 0.03rem;
+			box-shadow: inset 0px 2px 10px rgba(0, 0, 0, .33);
+		}
+		header,
+		textarea,
+		.divider {
+			transition: all 300ms ease-in-out;
+		}
+		::-webkit-scrollbar {
+			width: .5rem;
+			background: transparent;
+		}
+		::-webkit-scrollbar-thumb {
+			background: rgba(0, 0, 0, .17);
+			border-radius: 1rem;
+		}
+		
+		/* dark theme */
+		
+		.dark header {
+			background-color: #212121;
+			color: #fff;
+		}
+		.dark svg {
+			fill: #fff;
+		}
+		.dark textarea {
+			background-color: #303030;
+			color: rgba(255, 255, 255, .7);
+		}
+		
+		.divider {
+			width: 1px;
+			background-color: #000;
+			margin: -.5rem .5rem;
+			opacity: .12;
+		}
+		
+		.dark .divider {
+			background-color: #fff;
+		}
+    </style>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded',function(){function b(){Notification.requestPermission()}function c(){document.body.className=g(m)||'',k.value=g(o)||''}function d(){document.addEventListener('click',function(q){for(var s,r=q.target;r!=document.body&&(s=r.getAttribute?r.getAttribute('data-action'):null,s in p&&p[s](r),!s);)r=r.parentNode}),document.body.addEventListener('animationend',function(q){'shake'==q.animationName&&document.body.classList.remove('shake')}),k.addEventListener('keydown',function(q){('Tab'==q.key||9==q.keyCode)&&(document.execCommand('insertText',!1,'\t'),q.preventDefault())}),k.addEventListener('input',function(){clearTimeout(i),i=setTimeout(function(){g(o,k.value)},500)})}function f(){p.theme=function(){document.body.classList.toggle('dark'),g(m,document.body.className),k.focus()},p.timer=function(q){var r=l.firstChild,s=60*+q.textContent,t=function(u,v){v=0|u/60,u-=60*v,r.nodeValue=v+':'+('0'+u).substr(-2)};'#text'!=r.nodeName&&(r=document.createTextNode(''),l.insertBefore(r,l.firstChild)),t(s),l.classList.add('active'),clearInterval(j),j=setInterval(function(){t(--s),s||(p.cancel(),h('Time\'s up!','Focus timer has expired.'),document.body.classList.add('shake'))},1e3)},p.cancel=function(){clearInterval(j),l.classList.remove('active')}}function g(q,r){var s=(1==arguments.length?'get':'set')+'Item';return localStorage[s](q,r)}function h(q,r){if('granted'==Notification.permission)new Notification(q,{body:r,requireInteraction:!0})}var i=null,j=null,k=document.querySelector('textarea'),l=document.querySelector('.timer'),m='theme',o='text',p={};(function(){b(),c(),d(),f(),k.focus()})()});
+    </script>
+</head>
+<body>
+    <header>
+        <section>
+            <h4 class="logo">
+                &#181;write
+            </h4>
+            <div class="timers">
+                <span class="timer"><span data-action="cancel" title="Cancel timer">&times;</span></span>
+				<span data-action="timer" title="5 minute timer">5</span>
+				<span data-action="timer" title="15 minute timer">15</span>
+				<span data-action="timer" title="30 minute timer">30</span>
+            </div>
+			<div class="divider"></div>
+            <div class="theme" title="Change theme">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" data-action="theme">
+					<path d="M17.66 8L12 2.35 6.34 8C4.78 9.56 4 11.64 4 13.64s.78 4.11 2.34 5.67 3.61 2.35 5.66 2.35 4.1-.79 5.66-2.35S20 15.64 20 13.64 19.22 9.56 17.66 8zM6 14c.01-2 .62-3.27 1.76-4.4L12 5.27l4.24 4.38C17.38 10.77 17.99 12 18 14H6z" />
+				</svg>
+            </div>
+			<div class="divider"></div>
+			<div class="github">
+				<a href="https://github.com/Soldier-B" target="_blank" title="Fork on GitHub">
+			<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.579 31.775">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16.289,0C7.294,0,0,7.293,0,16.291
+	c0,7.196,4.667,13.302,11.141,15.456c0.814,0.149,1.112-0.354,1.112-0.785c0-0.387-0.014-1.411-0.022-2.771
+	c-4.531,0.984-5.487-2.184-5.487-2.184c-0.741-1.882-1.809-2.383-1.809-2.383c-1.479-1.011,0.112-0.99,0.112-0.99
+	c1.635,0.115,2.495,1.679,2.495,1.679c1.453,2.489,3.813,1.771,4.741,1.354c0.148-1.053,0.569-1.771,1.034-2.178
+	c-3.617-0.411-7.42-1.809-7.42-8.051c0-1.778,0.635-3.232,1.677-4.371c-0.167-0.412-0.727-2.068,0.16-4.311
+	c0,0,1.368-0.438,4.479,1.67c1.299-0.361,2.693-0.542,4.078-0.548c1.383,0.006,2.777,0.187,4.078,0.548
+	c3.11-2.108,4.475-1.67,4.475-1.67c0.889,2.243,0.33,3.899,0.162,4.311c1.044,1.139,1.674,2.593,1.674,4.371
+	c0,6.258-3.809,7.635-7.438,8.038c0.585,0.503,1.106,1.497,1.106,3.017c0,2.178-0.02,3.935-0.02,4.469
+	c0,0.436,0.293,0.942,1.12,0.783c6.467-2.158,11.13-8.26,11.13-15.454C32.579,7.293,25.285,0,16.289,0z"/>
+</svg></a></div>
+        </section>
+    </header>
+    <main>
+        <textarea spellcheck="false"></textarea>
+    </main>
+</body>
+</html>
